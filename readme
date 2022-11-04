@@ -1,0 +1,19 @@
+Bom dia
+
+Avaliando o método proposto no desafio como não sendo o mais eficiente e considerando que trabalhar com Cloud acaba gerando custos recorrentes à empresa que
+podem ser facilmente eliminados por um único profissional capaz de gerir a rede privada, a solução proposta é:
+criando-se (ou possuindo-se) um banco de dados em SQL, não parece interessante movê-los e processá-los em Cloud
+(inclusive porque o uso de "serverless aplication" foi apontado como diferencial, o que previne, também, potenciais ataques).
+
+Para tal é proposta uma aplicação desktop de pequeno uso de memória com interface CRUD como solicitado.
+A interface é bastante intuitiva e o programa, estando no mesmo diretório que o banco de dados, o carrega automaticamente na interface, já trabalhando em SQL.
+
+Uma vez finalizado o processo, esse arquivo (que, inclusive, pode ser encriptado com chave específica direto do terminal do cliente*),
+seria sincronizado automaticamente com o servidor* (sendo servidor próprio e como os dados estariam encriptados, é seguro fazer tal sistema).
+Para edições, o arquivo seria, novamente, extraído do servidor para trabalho local e, uma vez usado, volta para o servidor.
+
+*Tarefas não implementadas NESTE código
+# Além das tarefas descritas, é possível, ainda, gerar um arquivo em PDF para cada cliente específico, com as informações contantes nos campos de preenchimento.
+É possível também, na mesma aplicação, aplicar um conversor entre csv e SQL para melhor visualização e processamento.
+
+(Tenho aplicações semelhantes já desenvolvidas, de forma que pode ser facilmente implementado).
